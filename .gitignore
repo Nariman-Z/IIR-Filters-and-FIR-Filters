@@ -1,0 +1,16 @@
+# MATLAB & Simulink
+*.asv
+*.m~
+slprj/
+
+# Arduino & ESP32 Build Artifacts
+build/
+*.bin
+*.elf
+*.hex
+
+# Editor & OS Backups
+*~
+*.swp
+*.tmp
+.DS_Store

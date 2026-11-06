@@ -1,3 +1,7 @@
+%% Ex2.m - Multi-Band Filtering: High-Pass, Band-Pass & Band-Stop (IIR vs FIR)
+% Author: Nariman Ziaie
+% Date  : June 2024
+
 % Define the sampling frequency and time vector
 fs = 500; % Sampling frequency in Hz
 t = 0:1/fs:1-1/fs; % Time vector
@@ -17,10 +21,10 @@ cutoff = 20; % Cutoff frequency in Hz
 % Apply the IIR high-pass filter to the input signal
 iir_hp_output = filter(b_iir_hp, a_iir_hp, input_signal);
 
-% Design an FIR low-pass filter using the Hamming window method
+% Design an FIR high-pass filter using the Hamming window method
 b_fir_hp = fir1(numtaps-1, cutoff/(fs/2), 'high', hamming(numtaps));
 
-% Apply the FIR low-pass filter to the input signal
+% Apply the FIR high-pass filter to the input signal
 fir_hp_output = filter(b_fir_hp, 1, input_signal);
 
 %-------------------- Band-Pass --------------------%

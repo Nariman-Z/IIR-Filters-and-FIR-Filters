@@ -1,3 +1,7 @@
+%% Ex1.m - Low-Pass Filter Comparison: IIR Butterworth vs. FIR Hamming
+% Author: Nariman Ziaie
+% Date  : June 2024
+
 % Define the sampling frequency and time vector
 fs = 500; % Sampling frequency in Hz
 t = 0:1/fs:1-1/fs; % Time vector from 0 to 1 second with a step of 1/fs.
